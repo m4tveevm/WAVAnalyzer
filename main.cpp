@@ -71,7 +71,7 @@ void displayHistogram(const std::vector<double> &frequencies, const std::vector<
     printw("| Current Second: %d\n", currentSecond);
 
     double maxMagnitude = *max_element(magnitudes.begin(), magnitudes.end());
-    const int maxBarLength = 50;
+    const int maxBarLength = 52;
 
     for (size_t i = 0; i < frequencies.size(); ++i) {
         double normalizedMagnitude = (magnitudes[i] / maxMagnitude) * maxBarLength;
